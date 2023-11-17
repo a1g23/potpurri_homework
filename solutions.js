@@ -99,7 +99,13 @@ const bankTotal = bankAccountSummary(bankInfo)
 
 // Write another function called inTheRed that accepts your bank account summary total (number) as an argument. The function should return true if your total is less than 0, and false otherwise.
 
-inTheRed
+const inTheRed = (bankTotal) => {
+    if(bankTotal < 0) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
 
 // Example expected output:
 
