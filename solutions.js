@@ -40,3 +40,29 @@ const oddNumberCount = (number) => {
 
 oddNumberCount(7) // => returns 3 (because [1, 3, 5] are the positive odd numbers below 7)
 oddNumberCount(16) // => returns 8 (because [1, 3, 5, 7, 9, 11, 13, 15] are the positive odd numbers below 
+
+
+
+
+// Trolls are attacking your comment section! Let's neutralize the threat by removing all vowels from their comments. 
+//That'll make them look real silly.
+
+// Write a function named trollsBeGone which receives one argument that should be a sentence (a string). 
+//The function should return a new string with all the vowels removed from the original string.
+
+// Example expected output:
+
+// first: what are my vowels "a, e, i, o, u" - 
+// if I see a value in my string, I want to delete it from the output
+// how to "scan" string (looking that up)
+
+const trollsBeGone = (stringValue) => {
+    console.log(stringValue)
+    let text = stringValue.toString()
+    console.log(text)
+    let newText = text.replace(/a|e|i|o|u/g,"") //reg expression, looking for all values, globally. and replacing with nothing
+    console.log(text)
+    console.log(newText)
+}
+
+trollsBeGone("This website is for losers LOL") // => returns "Ths wbst s fr lsrs LL"
