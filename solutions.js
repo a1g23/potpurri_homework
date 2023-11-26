@@ -58,7 +58,7 @@ oddNumberCount(16) // => returns 8 (because [1, 3, 5, 7, 9, 11, 13, 15] are the 
 
 const trollsBeGone = (stringValue) => {
     let text = stringValue.toString()
-    let newText = text.replace(/a|e|i|o|u/g,"") //reg expression, looking for all values, globally. and replacing with nothing
+    let newText = text.replace(/a|e|i|o|u/ig,"") //reg expression, looking for all values, globally. and replacing with nothing
     console.log(newText)
 }
 
