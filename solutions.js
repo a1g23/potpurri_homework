@@ -31,7 +31,9 @@ setAlarm(true, false) // => returns true
 
 const oddNumberCount = (number) => {
     const values = []                          // I can create an array with no values in it
-    for(i = 1; i < number; i += 2) { 
+
+    // We need to declare i with let or else it will cause a RefrenceError
+    for(let i = 1; i < number; i += 2) { 
         values.push(i)                          // push the odd numbers into into it until the parameter via loop
     }
     console.log(values.length)                  // console.log the length of the array
